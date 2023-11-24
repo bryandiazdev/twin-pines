@@ -1,0 +1,14 @@
+/* styles/index.module.css */
+
+.fadeIn {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  

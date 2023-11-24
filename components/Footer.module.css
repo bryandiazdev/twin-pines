@@ -1,0 +1,13 @@
+/* components/Footer.module.css */
+
+/* Existing styles */
+
+/* Add mobile styles */
+@media only screen and (max-width: 600px) {
+    .footerLinks {
+      flex-direction: column; /* Stack footer links vertically on smaller screens */
+    }
+  
+    /* Adjust other styles as needed */
+  }
+  

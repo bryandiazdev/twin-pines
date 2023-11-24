@@ -1,0 +1,83 @@
+/* components/Header.module.css */
+
+.header {
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+}
+
+.show {
+  transform: translateY(0);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.container nav {
+  display: flex;
+  align-items: center;
+}
+
+.container span {
+  margin: 0 15px;
+}
+
+/* components/Dropdown.module.css */
+
+/* components/Dropdown.module.css */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  transform: translateY(-10px);
+  background-color: #ffffff; /* Background color */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Add padding for space */
+  z-index: 1;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Style the individual links */
+.dropdownContent a {
+  display: block;
+  padding: 10px;
+  color: #333; /* Link color */
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dropdownContent a:hover {
+  background-color: #f0f0f0; /* Hover background color */
+}
+
+/* Add more styles as needed */
+
+
+/* Add more styles as needed */
+
+/* Add your responsive styles here */

@@ -1,0 +1,62 @@
+/* styles/services.module.css */
+/* styles/services.module.css */
+
+.pageContainer {
+    margin: 0 auto;
+    padding: 50vh 0 40px 0;
+    background: var(--secondary-bg-color);
+  }
+  
+  
+  /* New container for the top section with background image */
+  .topSection {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 50vh; /* Adjust the height based on your design preferences */
+    background-image: url('https://images.unsplash.com/photo-1532302780319-95689ab9d79a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGxhbmRzY2FwaW5nfGVufDB8fDB8fHww'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* Set text color for better visibility on the background */
+  }
+  
+  .fadeInOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    animation: fadeIn 2s ease; /* Adjust the duration as needed */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeInOverlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    /* For example, reduce padding or font size */
+    .pageContainer {
+      padding: 10px;
+      font-size: 16px;
+    }
+  }
+  /* Add more styles as needed */
+  

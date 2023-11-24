@@ -1,0 +1,27 @@
+/* styles/ServicesSection.module.css */
+
+.servicesSection {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* styles/Services.module.css */
+
+/* Existing styles */
+
+/* Add mobile styles */
+@media only screen and (max-width: 600px) {
+  .servicesSection {
+    padding: 20px; /* Add padding to service sections on smaller screens */
+  }
+
+  .serviceCard {
+    width: 100%; /* Make service cards full-width on smaller screens */
+    margin-bottom: 20px; /* Add spacing between service cards */
+  }
+
+  /* Adjust other styles as needed */
+}

@@ -1,0 +1,53 @@
+/* styles/HomeTestimonials.module.css */
+
+.homeTestimonials {
+    background-color: var(--primary-bg-color); /* Dark brown background */
+    padding: 40px 0;
+    text-align: center;
+    color: var(--text-color); /* Dark text color */
+  }
+  
+  .homeTestimonials h2 {
+    margin-bottom: 20px;
+    color: var(--text-color)
+  }
+  
+  .testimonialList {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .testimonial {
+    max-width: 400px;
+    margin: 0 20px;
+    padding: 20px;
+    border: 1px solid var(--border-color); /* Light gray for borders */
+    border-radius: 8px;
+    background-color: var(--secondary-bg-color); /* Light beige background */
+    color: var(--text-color); /* Dark text color */
+  }
+  
+  .testimonial p {
+    margin-bottom: 10px;
+  }
+  
+  .testimonialAuthor {
+    font-style: italic;
+    color: var(--link-color); /* Brown for links */
+  }
+
+  /* components/HomeTestimonials.module.css */
+
+/* Existing styles */
+
+/* Add mobile styles */
+@media only screen and (max-width: 600px) {
+    .testimonial {
+      width: 100%; /* Make testimonial cards full-width on smaller screens */
+      margin-bottom: 20px; /* Add spacing between testimonial cards */
+    }
+  
+    /* Adjust other styles as needed */
+  }
+  
+  

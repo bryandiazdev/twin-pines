@@ -1,0 +1,13 @@
+/* components/HomeContact.module.css */
+
+/* Existing styles */
+
+/* Add mobile styles */
+@media only screen and (max-width: 600px) {
+    .home-contact-form {
+      width: 90%; /* Make contact form full-width on smaller screens */
+    }
+  
+    /* Adjust other styles as needed */
+  }
+  

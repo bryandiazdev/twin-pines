@@ -1,27 +1,253 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* styles/globals.css */
+/* styles/globals.css */
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --primary-bg-color: #773c29; /* Dark background color similar to Twitter's dark mode */
+  --secondary-bg-color: #8b6148; /* Slightly lighter background color */
+  --text-color: #ffffff; /* White text color */
+  --link-color: #1da1f2; /* Twitter blue for links */
+  --link-hover-color: #00acee; /* Hover color for links */
+  --accent-color: #95ca4e; /* Accent color */
+  --border-color: #38444d; /* Border color */
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
 }
+
+/* styles/globals.css */
+
+/* In your global or component-specific CSS file */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+body.loaded {
+  opacity: 1;
+}
+
+/* Add or update other styles as needed */
+
+
+/* Add or update other styles as needed */
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  overflow-x: hidden; /* To prevent horizontal scrollbar due to parallax effect */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* styles/globals.css */
+
+/* ... (previous styles) */
+
+/* header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+  opacity: 0; /* Initially set opacity to 0 for the fade-in effect */
+  /* transform: translateY(-100%); /* Initially set translateY to -100% for the slide-down effect */
+  /* transition: opacity 0.5s ease, transform 0.5s ease; Apply transition for smooth animation */
+/* }
+
+header.show {
+  opacity: 1;
+  transform: translateY(0);
+}  */
+
+.hero {
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1597201278257-3687be27d954?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBpbmd8ZW58MHx8MHx8fDA%3D');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px); /* Initial position for the fade-slide effect */
+  transition: opacity 1s ease, transform 1s ease; /* Apply transition for smooth animation */
+}
+
+.hero.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* Add more styles as needed for other sections */
+
+/* styles/globals.css */
+
+/* ... (previous styles) */
+
+footer {
+  background-color: var(--secondary-bg-color);
+  color: #faf4f2;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links li {
+  margin: 0 15px;
+}
+
+.footer-links a {
+  color: #faf4f2;
+  text-decoration: none;
+}
+
+.footer-info p {
+  margin: 10px 0;
+}
+
+/* styles/globals.css */
+
+/* ... (previous styles) */
+
+.home-services-carousel {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.home-services-carousel h2 {
+  margin-bottom: 20px;
+}
+
+.home-testimonials {
+  background-color: #faf4f2;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.home-testimonials h2 {
+  margin-bottom: 20px;
+}
+
+.testimonial-list {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial {
+  max-width: 400px;
+  margin: 0 20px;
+  padding: 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+}
+
+.testimonial p {
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-style: italic;
+}
+
+.home-contact-form {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.home-contact-form h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+

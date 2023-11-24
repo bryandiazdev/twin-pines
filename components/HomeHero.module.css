@@ -1,0 +1,59 @@
+/* styles/HomeHero.module.css */
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh; /* Set the height based on your design preferences */
+    overflow: hidden;
+  }
+  
+  /* styles/HomeHero.module.css */
+
+/* styles/HomeHero.module.css */
+
+.fadeIn {
+  animation: fadeInAnimation 5s ease infinite; /* Adjust the duration to match the image change interval */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+  
+  
+  .heroContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff; /* White text color */
+  }
+
+  /* styles/Home.module.css */
+
+/* Existing styles */
+
+/* Add mobile styles */
+/* components/HomeHero.module.css */
+
+/* Existing styles */
+
+/* Add mobile styles */
+@media only screen and (max-width: 600px) {
+    .heroContent {
+      padding: 10px; /* Add padding to the hero content on smaller screens */
+    }
+  
+    .heroContent h1 {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+  
+   .heroContent p {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+  
+    /* Adjust other styles as needed */
+  }
+  
+  
+  
