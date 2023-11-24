@@ -3,7 +3,7 @@ import Head from 'next/head';
 import CompanyProfile from '../components/CompanyProfile';
 import BusinessPhilosophy from '../components/BusinessPhilosophy';
 import styles from './about.module.css';
-import vid from '../public/images/vid.mp4';
+import vid from '/images/vid.mp4';
 import Page from '../app/genericPage';
 
 const About: React.FC = () => {
