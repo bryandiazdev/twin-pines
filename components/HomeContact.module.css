@@ -12,7 +12,10 @@
       align-items: center;
     }
     .form-group {
-      width: 92%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   
     /* Adjust other styles as needed */
