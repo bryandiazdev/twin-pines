@@ -2,11 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-<<<<<<< HEAD
-import logo from '/public/images/logo.png';
-=======
-import logo from '../public/images/logo.png';
->>>>>>> parent of 1b21aab (fixes)
+import logo from '/images/logo.png';
 import styles from './Header.module.css';
 
 const Header: React.FC = () => {

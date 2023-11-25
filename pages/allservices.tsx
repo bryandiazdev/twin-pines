@@ -4,7 +4,7 @@ import ServicesSection from '../components/ServicesSection';
 import CallToAction from '../components/CallToAction';
 import InteractiveGallery from '../components/InteractiveGallery';
 import styles from './services.module.css';
-import Page from '../app/genericPage';
+import Page from '@/app/genericPage';
 import InteractiveGallery2 from '../components/InteractiveGallery2';
 import InteractiveGallery3 from '../components/InteractiveGallery3';
 import '../app/globals.css';
