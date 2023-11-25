@@ -1,11 +1,19 @@
 // components/InteractiveGallery.tsx
 import React from 'react';
 import styles from './InteractiveGallery.module.css';
+<<<<<<< HEAD
 import services1 from '/public/images/services1.jpg';
 import services2 from '/public/images/services2.jpg';
 import Image from 'next/image';
 import services3 from '/public/images/services3.jpg';
 import services4 from '/public/images/services4.jpg';
+=======
+import services1 from '../public/images/services1.jpg';
+import services2 from '../public/images/services2.jpg';
+import Image from 'next/image';
+import services3 from '../public/images/services3.jpg';
+import services4 from '../public/images/services4.jpg';
+>>>>>>> parent of 1b21aab (fixes)
 import { useInView } from 'react-intersection-observer';
 
 const images = [
