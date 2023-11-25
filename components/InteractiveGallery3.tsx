@@ -1,11 +1,11 @@
 // components/InteractiveGallery.tsx
 import React from 'react';
 import styles from './InteractiveGallery.module.css';
-import services1 from '/public/images/services9.jpg';
-import services2 from '/public/images/services10.jpg';
+import services1 from '/images/services9.jpg';
+import services2 from '/images/services10.jpg';
 import Image from 'next/image';
-import services3 from '/public/images/services11.jpg';
-import services4 from '/public/images/services12.jpg';
+import services3 from '/images/services11.jpg';
+import services4 from '/images/services12.jpg';
 import { useInView } from 'react-intersection-observer';
 
 const images = [
