@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
 
 const images = [
-  '/services9.jpg', // Replace with your image paths
+  '/services9.JPG', // Replace with your image paths
   '/services10.jpg',
   '/services11.jpg',
   '/services12.jpg',

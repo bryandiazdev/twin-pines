@@ -9,9 +9,9 @@ import Page from '@/app/genericPage';
 const DesignService: React.FC = () => {
   const designImages = [
     '/services1.jpg',
-    '/services2.jpg',
+    '/services2.JPG',
     '/services3.jpg',
-    '/services4.jpg',
+    '/services4.JPG',
   ];
 
   return (

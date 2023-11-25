@@ -7,10 +7,10 @@ import './design.css'
 import Page from '@/app/genericPage';
 const InstallationService: React.FC = () => {
   const installationImages = [
-    '/services5.jpg',
+    '/services5.JPG',
     '/services6.jpg',
-    '/services7.jpg',
-    '/services8.jpg',
+    '/services7.JPG',
+    '/services8.JPG',
   ];
 
   return (
