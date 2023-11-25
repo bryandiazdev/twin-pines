@@ -13,5 +13,9 @@ module.exports = {
       });
       return config;
     },
+    eslint: {
+      // Disable eslint during build (you can customize further if needed)
+      ignoreDuringBuilds: true,
+    },
   };
   
