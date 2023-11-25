@@ -3,15 +3,15 @@ import React from 'react';
 import Header from '../components/Header';
 import Gallery from '../components/Gallery';
 import './design.css';
-import '../app/globals.css';
+import '@/app/globals.css';
 import Page from '@/app/genericPage';
 
 const DesignService: React.FC = () => {
   const designImages = [
-    '/public/images/services1.jpg',
-    '/public/images/services2.jpg',
-    '/public/images/services3.jpg',
-    '/public/images/services4.jpg',
+    '/images/services1.jpg',
+    '/images/services2.jpg',
+    '/images/services3.jpg',
+    '/images/services4.jpg',
   ];
 
   return (
