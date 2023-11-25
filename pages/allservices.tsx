@@ -28,7 +28,7 @@ const Services: React.FC = () => {
           </div>
 
           {/* First Services Section */}
-          <div style={{marginTop: '50vh'}}>
+          <div className={styles.servicesDiv}>
           <ServicesSection
             service="Landscape Design"
             description="Transform your outdoor space into a masterpiece with our expert landscape design services."
