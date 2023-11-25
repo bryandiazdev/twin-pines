@@ -19,6 +19,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
   };
 
   return (
+    <div style={{width: '100%', height: '100%', overflow: 'hidden'}}>
     <Slider {...settings}>
       {images.map((image, index) => (
         <div key={index}>
@@ -26,6 +27,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
         </div>
       ))}
     </Slider>
+    </div>
   );
 };
 

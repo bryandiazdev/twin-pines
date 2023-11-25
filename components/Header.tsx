@@ -42,9 +42,13 @@ const Header: React.FC = () => {
               </Link>
             </div>
           </div>
-          <Link href="/about">
+          <div className={styles.dropdown}>
             <span>About</span>
-          </Link>
+            <div className={styles.dropdownContent}>
+              <Link href="/business-philosophy"><span>Business Philosophy</span></Link>
+              <Link href="/company-profile"><span>Company Profile</span></Link>
+            </div>
+          </div>
           {/* Add other navigation links here */}
         </nav>
       </div>

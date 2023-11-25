@@ -44,7 +44,7 @@ const HomeServicesCarousel: React.FC = () => {
 
   return (
     <section ref={ref} className={`${styles.homeServicesCarousel} ${inView ? styles.fadeIn : ''}`}>
-      <h2>Our Services</h2>
+      <h2 className='mt-2'>Our Services</h2>
       <Slider {...settings}>
         {servicesData.map((service) => (
           <div key={service.id} className={styles.serviceSlide}>

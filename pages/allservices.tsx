@@ -28,6 +28,7 @@ const Services: React.FC = () => {
           </div>
 
           {/* First Services Section */}
+          <div style={{marginTop: '50vh'}}>
           <ServicesSection
             service="Landscape Design"
             description="Transform your outdoor space into a masterpiece with our expert landscape design services."
@@ -36,19 +37,20 @@ const Services: React.FC = () => {
 
           {/* Second Services Section */}
           <ServicesSection
-            service="Installation & Maintenance"
+            service="Installation"
             description="From concept to reality, we handle installation and ensure your landscape stays beautiful year-round."
           />
           <InteractiveGallery2 />
 
           {/* Third Services Section */}
           <ServicesSection
-            service="Seasonal Enhancements"
+            service="Maintenance"
             description="Celebrate the beauty of every season with our seasonal enhancements, adding color and life to your landscape."
           />
 
           {/* Interactive Gallery Section */}
           <InteractiveGallery3 />
+          </div>
 
           {/* Call to Action Section */}
           <CallToAction />
