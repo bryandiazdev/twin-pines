@@ -5,7 +5,14 @@
 /* Add mobile styles */
 @media only screen and (max-width: 600px) {
     .home-contact-form {
-      width: 90%; /* Make contact form full-width on smaller screens */
+      width: 100%; /* Make contact form full-width on smaller screens */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .form-group {
+      width: 92%;
     }
   
     /* Adjust other styles as needed */
