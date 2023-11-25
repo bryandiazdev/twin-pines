@@ -1,18 +1,14 @@
 // components/InteractiveGallery.tsx
 import React from 'react';
 import styles from './InteractiveGallery.module.css';
-import services1 from '/images/services9.jpg';
-import services2 from '/images/services10.jpg';
 import Image from 'next/image';
-import services3 from '/images/services11.jpg';
-import services4 from '/images/services12.jpg';
 import { useInView } from 'react-intersection-observer';
 
 const images = [
-  services1, // Replace with your image paths
-  services2,
-  services3,
-  services4,
+  '/services9.jpg', // Replace with your image paths
+  '/services10.jpg',
+  '/services11.jpg',
+  '/services12.jpg',
 ];
 
 const InteractiveGallery3: React.FC = () => {
