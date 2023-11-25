@@ -3,7 +3,6 @@ import Head from 'next/head';
 import CompanyProfile from '../components/CompanyProfile';
 import BusinessPhilosophy from '../components/BusinessPhilosophy';
 import styles from './about.module.css';
-import vid from '@/public/vid.mp4';
 import Page from '@/app/genericPage';
 
 const About: React.FC = () => {
@@ -16,7 +15,7 @@ const About: React.FC = () => {
       <div className={styles.pageContainer}>
         {/* Video Background */}
         <video className={styles.videoBackground} autoPlay muted loop>
-          <source src={vid} type="video/mp4" />
+          <source src='/vid.mp4' type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
