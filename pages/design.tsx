@@ -8,10 +8,10 @@ import Page from '@/app/genericPage';
 
 const DesignService: React.FC = () => {
   const designImages = [
-    '/images/services1.jpg',
-    '/images/services2.jpg',
-    '/images/services3.jpg',
-    '/images/services4.jpg',
+    '/public/images/services1.jpg',
+    '/public/images/services2.jpg',
+    '/public/images/services3.jpg',
+    '/public/images/services4.jpg',
   ];
 
   return (

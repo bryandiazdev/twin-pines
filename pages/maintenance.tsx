@@ -7,10 +7,10 @@ import './design.css';
 import Page from '@/app/genericPage';
 const MaintenanceService: React.FC = () => {
   const maintenanceImages = [
-    '/images/services9.jpg',
-    '/images/services10.jpg',
-    '/images/services11.jpg',
-    '/images/services12.jpg',
+    '/public/images/services9.jpg',
+    '/public/images/services10.jpg',
+    '/public/images/services11.jpg',
+    '/public/images/services12.jpg',
   ];
 
   return (
