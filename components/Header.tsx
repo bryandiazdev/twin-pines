@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '/images/logo.png';
+import logo from '/public/logo.png';
 import styles from './Header.module.css';
 
 const Header: React.FC = () => {
