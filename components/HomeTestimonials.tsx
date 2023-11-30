@@ -38,7 +38,7 @@ const HomeTestimonials: React.FC = () => {
     <div style={{display: 'flex', marginTop: '20px', justifyContent: 'center', alignItems: 'center', maxWidth: '100vw', background: '#f8f8f8', paddingBottom: '60px'}}>
       <section style={{maxWidth: '600px', width: '100%', display: 'flex', flexDirection: 'column', alignContent: 'center', justifyContent: 'center'}}>
         <h2 style={{textAlign: 'center', margin: '40px', color: '#8b6148'}}>Client Testimonials</h2>
-        <Slider {...settings}>
+        <Slider arrows={false} {...settings}>
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className='testimonial'>
               <p>{testimonial.content}</p>
