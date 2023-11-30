@@ -21,7 +21,7 @@ const Home: React.FC = () => {
     {
       title: 'Landscape Design 2',
       link: '/services/design',
-      image: '/services2.jpg',
+      image: '/services2.JPG',
     },
     // Service 3
     {
@@ -37,13 +37,13 @@ const Home: React.FC = () => {
     {
       title: 'Installation 1',
       link: '/services/installation',
-      image: '/services4.jpg',
+      image: '/services4.JPG',
     },
     // Service 2
     {
       title: 'Installation 2',
       link: '/services/installation',
-      image: '/services5.jpg',
+      image: '/services5.JPG',
     },
     // Service 3
     {
@@ -58,19 +58,19 @@ const Home: React.FC = () => {
     {
       title: 'Maintenance 1',
       link: '/services/maintenance',
-      image: '/services7.jpg',
+      image: '/services7.JPG',
     },
     // Service 2
     {
       title: 'Maintenance 2',
       link: '/services/maintenance',
-      image: '/services8.jpg',
+      image: '/services8.JPG',
     },
     // Service 3
     {
       title: 'Maintenance 3',
       link: '/services/',
-      image: '/services9.jpg',
+      image: '/services9.JPG',
     },
     // Add more services as needed
   ];
