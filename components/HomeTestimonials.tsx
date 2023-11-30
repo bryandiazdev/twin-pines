@@ -1,38 +1,53 @@
-// components/HomeTestimonials.tsx
 import React from 'react';
-import { useInView } from 'react-intersection-observer';
-import styles from './HomeTestimonials.module.css';
+import Slider from 'react-slick';
+import './HomeTestimonials.module.css';
 
-const testimonialsData = [
-    {
-      id: 1,
-      name: 'John Doe',
-      quote: 'Twin Pines Landscaping exceeded my expectations. The team was professional and the results were stunning.',
-    },
-    {
-      id: 2,
-      name: 'Jane Smith',
-      quote: 'I highly recommend Twin Pines for their exceptional service and attention to detail. A pleasure to work with!',
-    },
-  ];
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const testimonials = [
+  {
+    id: 1,
+    content: "The team at Twin Pines Landscaping exceeded our expectations. Their attention to detail and creativity transformed our backyard into a beautiful oasis.",
+    author: "John Doe, Happy Customer",
+  },
+  {
+    id: 2,
+    content: "We are incredibly pleased with the results of our landscaping project. The communication and professionalism demonstrated by Twin Pines Landscaping made the entire process seamless.",
+    author: "Jane Smith, Satisfied Client",
+  },
+  {
+    id: 3,
+    content: "Twin Pines Landscaping truly understands the artistry of landscaping. The dedication and craftsmanship they put into their work make them the top choice for anyone looking to enhance their outdoor space.",
+    author: "Michael Johnson, Delighted Homeowner",
+  },
+];
 
 const HomeTestimonials: React.FC = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '0',
+  };
 
   return (
-    <section ref={ref} className={`${styles.homeTestimonials} ${inView ? styles.fadeIn : ''}`}>
-      <h2>What Our Clients Say</h2>
-      <div className={styles.testimonialList}>
-        {testimonialsData.map((testimonial) => (
-          <div key={testimonial.id} className={styles.testimonial}>
-            <p>{testimonial.quote}</p>
-            <p className={styles.testimonialAuthor}>- {testimonial.name}</p>
-          </div>
-        ))}
-      </div>
-    </section>
+    <div style={{display: 'flex', marginTop: '20px', justifyContent: 'center', alignItems: 'center', maxWidth: '100vw', background: '#f8f8f8', paddingBottom: '60px'}}>
+      <section style={{maxWidth: '600px', width: '100%', display: 'flex', flexDirection: 'column', alignContent: 'center', justifyContent: 'center'}}>
+        <h2 style={{textAlign: 'center', margin: '40px', color: '#8b6148'}}>Client Testimonials</h2>
+        <Slider {...settings}>
+          {testimonials.map((testimonial) => (
+            <div key={testimonial.id} className='testimonial'>
+              <p>{testimonial.content}</p>
+              <p className="author">{testimonial.author}</p>
+            </div>
+          ))}
+        </Slider>
+      </section>
+    </div>
   );
 };
 

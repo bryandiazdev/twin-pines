@@ -1,34 +1,37 @@
-// components/HomeContactForm.tsx
+// components/ContactSection.tsx
 import React from 'react';
-import styles from './HomeContact.module.css';
+import { motion } from 'framer-motion';
 
-const HomeContactForm: React.FC = () => {
-  // Add your contact form logic here
-
+const ContactSection: React.FC = () => {
   return (
-    <div className={styles['home-contact-form']}>
-      <h2>Contact Us</h2>
-      <form style={{width: '80%'}}>
-        {/* Add your form fields here */}
-        <div className={styles['form-group']}>
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div className={styles['form-group']}>
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div className={styles['form-group']}>
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" rows={4} required></textarea>
-        </div>
-        <div className={styles['form-group']}>
-
-        <button style={{margin: '2rem'}} type="submit">Submit</button>
-        </div>
-      </form>
-    </div>
+    <section className="contact-section">
+      <div className="contact-container">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="form-container"
+        >
+          <h2>Get in Touch</h2>
+          <form>
+            <label>
+              Your Name:
+              <input type="text" />
+            </label>
+            <label>
+              Your Email:
+              <input type="email" />
+            </label>
+            <label>
+              Message:
+              <textarea rows={5}></textarea>
+            </label>
+            <button type="submit">Submit</button>
+          </form>
+        </motion.div>
+      </div>
+    </section>
   );
 };
 
-export default HomeContactForm;
+export default ContactSection;

@@ -1,59 +1,52 @@
-/* styles/HomeHero.module.css */
-
+/* components/Hero.module.css */
 .hero {
-    position: relative;
-    width: 100vw;
-    height: 100vh; /* Set the height based on your design preferences */
-    overflow: hidden;
-  }
-  
-  /* styles/HomeHero.module.css */
-
-/* styles/HomeHero.module.css */
-
-.fadeIn {
-  animation: fadeInAnimation 5s ease infinite; /* Adjust the duration to match the image change interval */
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the image covers the entire container */
+  position: relative;
+  height: 100vh; /* Set the height as needed */
+  background-image: url('/services7.JPG'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Adjust text color as needed */
 }
 
-  
-  
-  .heroContent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #ffffff; /* White text color */
-  }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust overlay opacity as needed */
+}
 
-  /* styles/Home.module.css */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
-/* Existing styles */
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
 
-/* Add mobile styles */
-/* components/HomeHero.module.css */
+.content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
 
-/* Existing styles */
+.content button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #95ca4e; /* Adjust button color as needed */
+  color: #fff; /* Adjust button text color as needed */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+  cursor: pointer;
+}
 
-/* Add mobile styles */
-@media only screen and (max-width: 600px) {
-    .heroContent {
-      padding: 10px; /* Add padding to the hero content on smaller screens */
-    }
-  
-    .heroContent h1 {
-      font-size: 1.5rem; /* Adjust font size for smaller screens */
-    }
-  
-   .heroContent p {
-      font-size: 1rem; /* Adjust font size for smaller screens */
-    }
-  
-    /* Adjust other styles as needed */
-  }
-  
-  
-  
+.content button:hover {
+  background-color: #773c29; /* Adjust button hover color as needed */
+}

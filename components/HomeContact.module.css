@@ -1,23 +1,19 @@
-/* components/HomeContact.module.css */
+/* Add this to your CSS styles */
+.contact-section {
+  background: url('/services9.JPG') center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-/* Existing styles */
+.contact-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+  padding: 20px;
+  border-radius: 10px;
+}
 
-/* Add mobile styles */
-@media only screen and (max-width: 600px) {
-    .home-contact-form {
-      width: 100%; /* Make contact form full-width on smaller screens */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    /* Adjust other styles as needed */
-  }
-  
+.form-container {
+  max-width: 600px;
+  width: 100%;
+}
