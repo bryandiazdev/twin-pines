@@ -24,7 +24,7 @@ const Services: React.FC = () => {
           {/* New top section with background image */}
           <div className={styles.topSection}>
             <div className={styles.fadeInOverlay}></div>
-            <h1 className='text-white opacity-1 z-10'>Our Services</h1>
+            <h1 style={{color: 'white'}} className='text-white opacity-1 z-10'>Our Services</h1>
           </div>
 
           {/* First Services Section */}

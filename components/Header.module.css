@@ -45,7 +45,7 @@
   position: absolute;
   width: 220px;
   top: 100%;
-  right: 0;
+  right: 20%;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s, transform 0.3s;

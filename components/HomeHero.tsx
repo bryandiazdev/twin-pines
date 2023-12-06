@@ -14,8 +14,8 @@ const Hero: React.FC = () => {
     <div className={styles.hero}>
       <div className={styles.overlay}></div>
       <div className={styles.content}>
-        <h1>Twin Pines Landscaping</h1>
-        <p>Transforming Outdoor Spaces with Excellence</p>
+        <h1 style={{color: 'white'}}>Twin Pines Landscaping</h1>
+        <p style={{color: 'white'}}>Transforming Outdoor Spaces with Excellence</p>
         <button onClick={handleScroll}>View our services</button>
       </div>
     </div>

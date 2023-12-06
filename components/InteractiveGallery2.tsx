@@ -18,7 +18,7 @@ const InteractiveGallery2: React.FC = () => {
 
   return (
     <div className={`${styles.gallery} ${inView ? styles.visible : ''}`} ref={ref}>
-      <h2>Explore Our Work</h2>
+      <h2  style={{color: 'transparent'}}>Explore Our Work</h2>
       <div className={styles.imageContainer}>
         {images.map((image, index) => (
           <div key={index} className={styles.imageWrapper}>

@@ -65,7 +65,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ service, description,
       </motion.div>
       <div className={styles.learnMoreButton}>
         <Link href={`/${service.toLowerCase().replace(/\s+/g, '-')}`}>
-          <span>Learn More</span>
+          Learn More
         </Link>
       </div>
     </motion.div>

@@ -14,7 +14,7 @@
 .card {
   width: 300px;
   margin: 20px;
-  padding: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .15);
   border: 1px solid #ccc;
   border-radius: 8px;
   text-align: center;
@@ -64,12 +64,16 @@
   display: inline-block;
   padding: 8px 16px;
   background-color: #95ca4e;
-  color: #fff;
+  color: #773c29;
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
+.learnMoreButton:hover {
+  color: white;
+}
 
 .learnMoreButton a:hover {
   background-color: #773c29;
+  color: white;
 }

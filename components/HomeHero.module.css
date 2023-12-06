@@ -39,7 +39,7 @@
   padding: 10px 20px;
   font-size: 1rem;
   background-color: #95ca4e; /* Adjust button color as needed */
-  color: #fff; /* Adjust button text color as needed */
+  color: #773c29; /* Adjust button text color as needed */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -49,4 +49,5 @@
 
 .content button:hover {
   background-color: #773c29; /* Adjust button hover color as needed */
+  color: white;
 }
