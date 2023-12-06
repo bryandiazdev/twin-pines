@@ -68,7 +68,7 @@ const Drawer = styled.div`
   display: none;
 
   @media (max-width: 768px) {
-    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+    display: flex;
     flex-direction: column;
     position: absolute;
     top: 90px;
@@ -99,7 +99,7 @@ const Header: React.FC = () => {
             <Bar />
             <Bar />
           </MenuIcon>
-          <Drawer isOpen={isDrawerOpen}>
+          <Drawer>
             <Link href="/">
               <StyledSpan onClick={toggleDrawer}>Home</StyledSpan>
             </Link>
