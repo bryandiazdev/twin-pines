@@ -38,12 +38,13 @@
 .content button {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #95ca4e; /* Adjust button color as needed */
-  color: #773c29; /* Adjust button text color as needed */
+  background-color: transparent; /* Adjust button color as needed */
+  color: white; /* Adjust button text color as needed */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.1s ease;
+  border: 1px solid white;
   cursor: pointer;
 }
 
