@@ -25,8 +25,8 @@ const Hero: React.FC = () => {
         <h1 style={{color: 'white'}}>Twin Pines Landscaping</h1>
         <p style={{color: 'white'}}>Transforming Outdoor Spaces with Excellence</p>
         <div style={{display: 'flex', justifyContent: 'center', width: '100vw'}}>
-        <button style={{marginRight: '2rem'}} onClick={handleScroll}>View our services</button>
-        <button style={{marginLeft: '2rem'}} onClick={routeToContact}>Contact us</button>
+        <button style={{marginRight: '1rem'}} onClick={handleScroll}>View our services</button>
+        <button style={{marginLeft: '1rem'}} onClick={routeToContact}>Contact us</button>
 
         </div>
         
