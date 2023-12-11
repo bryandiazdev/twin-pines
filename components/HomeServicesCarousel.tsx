@@ -52,14 +52,15 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ service, description,
       <motion.div className={styles.cardContainer}>
         {services.map((serviceCard, index) => (
           <motion.div
+          style={{background: `url(${serviceCard.image})`, opacity: '.7', height: '300px', width: '300px', backgroundSize: 'cover', display: 'flex', justifyContent: 'center', alignItems: 'center'}}
             key={index}
             className={`${styles.card} ${styles.fadeIn}`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 + index * 0.1 }}
           >
-            <img src={serviceCard.image} alt={serviceCard.title} />
-            <h3>{serviceCard.title}</h3>
+            {/* <img src={serviceCard.image} alt={serviceCard.title} /> */}
+            <h3 style={{color: 'white'}}>{serviceCard.title}</h3>
           </motion.div>
         ))}
       </motion.div>

@@ -13,64 +13,21 @@ const Home: React.FC = () => {
   const landscapingServices = [
     // Service 1
     {
-      title: 'Landscape Design 1',
+      title: 'Landscape Design',
       link: '/services/design',
       image: '/services1.jpg',
     },
     // Service 2
     {
-      title: 'Landscape Design 2',
+      title: 'Installation',
       link: '/services/design',
       image: '/services2.JPG',
     },
     // Service 3
     {
-      title: 'Landscape Design 3',
+      title: 'Maintenance',
       link: '/services/design',
       image: '/services3.jpg',
-    },
-    // Add more services as needed
-  ];
-
-  const installationServices = [
-    // Service 1
-    {
-      title: 'Installation 1',
-      link: '/services/installation',
-      image: '/services4.JPG',
-    },
-    // Service 2
-    {
-      title: 'Installation 2',
-      link: '/services/installation',
-      image: '/services5.JPG',
-    },
-    // Service 3
-    {
-      title: 'Installation 3',
-      link: '/services/installation',
-      image: '/services6.jpg',
-    },
-    // Add more services as needed
-  ];
-  const maintenanceServices = [
-    // Service 1
-    {
-      title: 'Maintenance 1',
-      link: '/services/maintenance',
-      image: '/services7.JPG',
-    },
-    // Service 2
-    {
-      title: 'Maintenance 2',
-      link: '/services/maintenance',
-      image: '/services8.JPG',
-    },
-    // Service 3
-    {
-      title: 'Maintenance 3',
-      link: '/services/',
-      image: '/services9.JPG',
     },
     // Add more services as needed
   ];
@@ -89,21 +46,11 @@ const Home: React.FC = () => {
         <div id='scroll-target'/>
         <div style={{marginTop: '160px'}}>
           <ServicesSection
-            service="Design"
-            description="Transform your outdoor space into a masterpiece with our expert landscape design services."
+            service="Our Services"
+            description="Transform your outdoor space into a masterpiece with our expert landscaping services."
             services={landscapingServices}
           />
         </div>
-          <ServicesSection
-            service="Installation"
-            description="From concept to reality, we handle installation and ensure your landscape stays beautiful year-round."
-            services={installationServices}
-          />
-          <ServicesSection
-            service="Maintenance"
-            description="Celebrate the beauty of every season with our seasonal enhancements, adding color and life to your landscape."
-            services={maintenanceServices}
-          />
         <HomeTestimonials />
         <HomeContactForm />
       </Page>
