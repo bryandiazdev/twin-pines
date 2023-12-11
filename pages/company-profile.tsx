@@ -20,8 +20,8 @@ Our Chief Designer has over 11 years experience in both landscape design/constru
 
 Twin Pines Landscaping has formed strong working relationships with a group of specialized subcontractors who share our goals of providing quality workmanship, cost efficiency and timely execution. These relationships allow us to execute all aspects of any landscape design-build environment.
 
-<br/><br/>
-Business philosophy <br/><br/>
+<br/><br/><br/>
+<h4>Business philosophy</h4> <br/><br/>
 From the start of our working relationship, Twin Pines Landscaping wants to understand your landscaping goals, your likes and dislikes, and any unique requirements or situations of your project. By incorporating this information into the development of a master landscaping plan, we can assure you a unique, yet comprehensive design you will be completely satisfied with for years to come.
 
           </p>
