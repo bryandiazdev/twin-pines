@@ -105,16 +105,16 @@ const Header: React.FC = () => {
             <div className={styles.dropdown}>
             <StyledSpan>Services</StyledSpan>
             <div className={styles.dropdownContent}>
-              <Link href="/design">
+              <Link href="/services">
                 <span>Design</span>
               </Link>
-              <Link href="/installation">
+              <Link href="/services">
                 <span>Installation</span>
               </Link>
-              <Link href="/maintenance">
+              <Link href="/services">
                 <span>Maintenance</span>
               </Link>
-              <Link href="/allservices">
+              <Link href="/services">
                 <span>All Services</span>
               </Link>
             </div>
@@ -122,7 +122,7 @@ const Header: React.FC = () => {
           <div className={styles.dropdown}>
             <StyledSpan>About</StyledSpan>
             <div className={styles.dropdownContent}>
-              <Link href="/business-philosophy"><span>Business Philosophy</span></Link>
+              <Link href="/company-profile"><span>Business Philosophy</span></Link>
               <Link href="/company-profile"><span>Company Profile</span></Link>
             </div>
           </div>
@@ -146,13 +146,13 @@ const Header: React.FC = () => {
             <div className={styles.dropdown}>
             <StyledSpan>Services</StyledSpan>
             <div className={styles.dropdownContent}>
-              <Link href="/design">
+              <Link href="/services">
                 <span>Design</span>
               </Link>
-              <Link href="/installation">
+              <Link href="/services">
                 <span>Installation</span>
               </Link>
-              <Link href="/maintenance">
+              <Link href="/services">
                 <span>Maintenance</span>
               </Link>
               <Link href="/allservices">
@@ -163,7 +163,7 @@ const Header: React.FC = () => {
           <div className={styles.dropdown}>
             <StyledSpan>About</StyledSpan>
             <div className={styles.dropdownContent}>
-              <Link href="/business-philosophy"><span>Business Philosophy</span></Link>
+              <Link href="/company-profile"><span>Business Philosophy</span></Link>
               <Link href="/company-profile"><span>Company Profile</span></Link>
             </div>
           </div>

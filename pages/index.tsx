@@ -7,6 +7,7 @@ import HomeContactForm from '../components/HomeContactForm';
 import styles from './index.module.css';
 import Page from '../app/genericPage';
 import HomeHero from '../components/HomeHero';
+import HomeFeaturedProjects from '@/components/HomeFeaturedProjects';
 
 const Home: React.FC = () => {
   const [showHero, setShowHero] = useState(false);
@@ -44,13 +45,14 @@ const Home: React.FC = () => {
       <Page title="Home">
         <HomeHero />
         <div id='scroll-target'/>
-        <div style={{marginTop: '160px'}}>
+        <div style={{marginTop: '120px', marginBottom: '40px'}}>
           <ServicesSection
-            service="Our Services"
+            service="Services"
             description="Transform your outdoor space into a masterpiece with our expert landscaping services."
             services={landscapingServices}
           />
         </div>
+        <HomeFeaturedProjects/>
         <HomeTestimonials />
         <HomeContactForm />
       </Page>

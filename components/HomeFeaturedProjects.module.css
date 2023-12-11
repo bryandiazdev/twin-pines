@@ -1,0 +1,14 @@
+/* components/HomeFeaturedProjects.module.css */
+.projectCard {
+    overflow: hidden; /* Hide overflow to prevent scaling the card */
+  }
+  
+  .cardImage {
+    object-fit: cover; /* Ensure the image covers the entire card */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .projectCard:hover .cardImage {
+    transform: scale(1.1);
+  }
+  
