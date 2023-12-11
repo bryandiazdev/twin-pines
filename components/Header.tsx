@@ -155,7 +155,7 @@ const Header: React.FC = () => {
               <Link href="/services">
                 <span>Maintenance</span>
               </Link>
-              <Link href="/allservices">
+              <Link href="/services">
                 <span>All Services</span>
               </Link>
             </div>
