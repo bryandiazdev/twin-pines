@@ -11,7 +11,7 @@ const featuredProjects = [
   {
     title: 'Front Yard - Grand Entrance',
     description: '',
-    image: '/yard.jpg',
+    image: '/yard.JPG',
   },
   {
     title: 'Modern Waterfront',
