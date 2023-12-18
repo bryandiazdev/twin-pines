@@ -294,6 +294,9 @@ button:hover {
 
 .contact-container {
   background-color: var(--primary-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 40px; /* Increased padding */
   border-radius: 10px;
   text-align: center;
