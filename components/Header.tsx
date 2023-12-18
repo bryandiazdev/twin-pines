@@ -5,78 +5,6 @@ import { Image } from 'react-bootstrap';
 import styled from 'styled-components';
 import styles from './Header.module.css';
 
-const HeaderContainer = styled.header`
-  background: black;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-`;
-
-const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-`;
-
-const Nav = styled.nav`
-  display: flex;
-  align-items: center;
-`;
-
-const MenuIcon = styled.div`
-  cursor: pointer;
-  display: none;
-
-  @media (max-width: 768px) {
-    display: block;
-  }
-`;
-
-const Bar = styled.div`
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 6px 0;
-  transition: 0.4s;
-`;
-
-const Links = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (max-width: 768px) {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px; /* Adjust top position as needed */
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Same as header background */
-  }
-`;
-
-const StyledSpan = styled.span`
-  padding: 15px;
-  display: block;
-  text-align: center;
-  color: white;
-`;
-
-const Drawer = styled.div`
-  display: none;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    position: absolute;
-    top: 90px;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-  }
-`;
-
 const Header: React.FC = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
@@ -85,25 +13,25 @@ const Header: React.FC = () => {
   };
 
   return (
-    <HeaderContainer>
-      <Container>
+    <div className={styles.HeaderContainer}>
+      <div className={styles.Container}>
         <h1>
           <Link href="/">
             <Image alt="logo" height={60} src="/logo.png" />
           </Link>
         </h1>
-        <Nav>
-          <MenuIcon onClick={toggleDrawer}>
-            <Bar />
-            <Bar />
-            <Bar />
-          </MenuIcon>
-          <Drawer style={{display: isDrawerOpen ? 'flex' : 'none'}}>
+        <div className={styles.Nav}>
+          <div className={styles.MenuIcon} onClick={toggleDrawer}>
+            <div className={styles.Bar} />
+            <div className={styles.Bar} />
+            <div className={styles.Bar} />
+          </div>
+          <div className={styles.Drawer} style={{display: isDrawerOpen ? 'flex' : 'none'}}>
             <Link href="/">
-              <StyledSpan onClick={toggleDrawer}>Home</StyledSpan>
+              <span className={styles.StyledSpan} onClick={toggleDrawer}>Home</span>
             </Link>
             <div className={styles.dropdown}>
-            <StyledSpan>Services</StyledSpan>
+            <span className={styles.StyledSpan}>Services</span>
             <div className={styles.dropdownContent}>
               <Link href="/services">
                 <span>Design</span>
@@ -120,31 +48,31 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className={styles.dropdown}>
-            <StyledSpan>About</StyledSpan>
+            <span className={styles.StyledSpan}>About</span>
             <div className={styles.dropdownContent}>
               <Link href="/company-profile"><span>Business Philosophy</span></Link>
               <Link href="/company-profile"><span>Company Profile</span></Link>
             </div>
           </div>
             {/* <Link href="/portfolio">
-              <StyledSpan onClick={toggleDrawer}>Portfolio</StyledSpan>
+              <span className={styles.StyledSpan} onClick={toggleDrawer}>Portfolio</span>
             </Link>
             <Link href="/testimonials">
-              <StyledSpan onClick={toggleDrawer}>Testimonials</StyledSpan>
+              <span className={styles.StyledSpan} onClick={toggleDrawer}>Testimonials</span>
             </Link>
             <Link href="/blog">
-              <StyledSpan onClick={toggleDrawer}>Blog</StyledSpan>
+              <span className={styles.StyledSpan} onClick={toggleDrawer}>Blog</span>
             </Link>
             <Link href="/contact">
-              <StyledSpan onClick={toggleDrawer}>Contact</StyledSpan>
+              <span className={styles.StyledSpan} onClick={toggleDrawer}>Contact</span>
             </Link> */}
-          </Drawer>
-          <Links>
+          </div>
+          <div className={styles.Links}>
             <Link href="/">
-              <StyledSpan>Home</StyledSpan>
+              <span className={styles.StyledSpan}>Home</span>
             </Link>
             <div className={styles.dropdown}>
-            <StyledSpan>Services</StyledSpan>
+            <span className={styles.StyledSpan}>Services</span>
             <div className={styles.dropdownContent}>
               <Link href="/services">
                 <span>Design</span>
@@ -161,28 +89,28 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className={styles.dropdown}>
-            <StyledSpan>About</StyledSpan>
+            <span className={styles.StyledSpan}>About</span>
             <div className={styles.dropdownContent}>
               <Link href="/company-profile"><span>Business Philosophy</span></Link>
               <Link href="/company-profile"><span>Company Profile</span></Link>
             </div>
           </div>
             {/* <Link href="/portfolio">
-              <StyledSpan>Portfolio</StyledSpan>
+              <span className={styles.StyledSpan}>Portfolio</span>
             </Link>
             <Link href="/testimonials">
-              <StyledSpan>Testimonials</StyledSpan>
+              <span className={styles.StyledSpan}>Testimonials</span>
             </Link>
             <Link href="/blog">
-              <StyledSpan>Blog</StyledSpan>
+              <span className={styles.StyledSpan}>Blog</span>
             </Link>
             <Link href="/contact">
-              <StyledSpan>Contact</StyledSpan>
+              <span className={styles.StyledSpan}>Contact</span>
             </Link> */}
-          </Links>
-        </Nav>
-      </Container>
-    </HeaderContainer>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

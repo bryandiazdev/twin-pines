@@ -1,34 +1,30 @@
-// components/Footer.tsx
-import React from 'react';
+// Footer.js
+import styles from './Footer.module.css'; // make sure to create a corresponding CSS module file
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
-    <footer>
-      <div className="container">
-        <div className="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/TwinPinesLandscapingInc/" target="_blank" rel="noopener noreferrer">
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a href="https://maps.app.goo.gl/dM2wFFWNxHtKynau9" target="_blank" rel="noopener noreferrer">
-                Google
-              </a>
-            </li>
-            <li>
-              <a href="https://www.houzz.com/pro/webuser-11241136" target="_blank" rel="noopener noreferrer">
-                Houzz
-              </a>
-            </li>
-          </ul>
+    <footer className={styles.footer}>
+      <div className={styles.footerContent}>
+        <div className={styles.contactInfo}>
+          <p>248-524-3244</p>
+          <p> info@twinpineslandscaping.com</p>
+          <p> Cornerstone Village, Suite F<br/>
+650 East Big Beaver Rd.<br/>
+Troy, MI 48083</p>
+        <div className={styles.socialLinks}>
+          <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
-        <div className="footer-info">
-          <p>&copy; {new Date().getFullYear()} Twin Pines Landscaping</p>
-          <p>Contact us - Office 248-524-3244 Fax 248-524-3244</p>
         </div>
+        <div className={styles.imageContainer}>
+  <img src="/services1.jpg" alt="Descriptive Text for Image"/>
+</div>
+
+      <div className={styles.copyRight}>
+        <p>© [2023] Twin Pines Landscaping. All rights reserved.</p>
+      </div>
       </div>
     </footer>
   );

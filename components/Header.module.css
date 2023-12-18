@@ -7,7 +7,7 @@
   left: 0;
   width: 100vw;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: white;
   padding: 20px 0;
 }
 
@@ -83,3 +83,79 @@
 /* Add more styles as needed */
 
 /* Add your responsive styles here */
+.HeaderContainer {
+  background: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px
+}
+
+.Nav {
+  display: flex;
+  align-items: center;
+}
+
+.MenuIcon {
+  cursor: pointer;
+  display: none;
+  color: black;
+  background: #773c29;
+}
+
+.Bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.Links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.StyledSpan {
+  padding: 15px;
+  display: block;
+  text-align: center;
+  color: #773c29;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Drawer {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .Links {
+
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust top position as needed */
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Same as header background */
+  }
+  .MenuIcon {
+    display: block;
+  }
+  .Drawer {
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+}

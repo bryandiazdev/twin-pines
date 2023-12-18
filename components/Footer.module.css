@@ -1,13 +1,95 @@
-/* components/Footer.module.css */
+/* FooterComponent.module.css */
+.footer {
+  background-color: var(--text-color); /* Replace with your color */
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Replace with your font choice */
+}
 
-/* Existing styles */
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  align-items: center;
+  margin: 0;
+}
 
-/* Add mobile styles */
-@media only screen and (max-width: 600px) {
-    .footerLinks {
-      flex-direction: column; /* Stack footer links vertically on smaller screens */
-    }
-  
-    /* Adjust other styles as needed */
+.contactInfo p, .socialLinks a {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.contactInfo {
+  width: 40vw;
+  text-align: center;
+}
+
+.socialLinks a {
+  text-decoration: none;
+  color: white; /* Replace with your link color */
+  margin-right: 10px;
+}
+
+.copyRight {
+  background: var(--primary-bg-color);
+  width: 100%;
+}
+
+.copyRight p {
+  text-align: center;
+  margin: 20px;
+  font-size: 0.8rem;
+  position: relative;
+  right: 0;
+}
+
+.imageContainer {
+  position: relative;
+  display: inline-block;
+  width: 55vw;
+  height: 40vh;
+}
+
+.imageContainer img {
+  display: block;
+  width: 100%; /* Adjust as needed */
+  height: 40vh; /* Adjust as needed */
+}
+
+.imageContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(165, 42, 42, 0.5); /* Brown color with 50% opacity */
+  z-index: 1;
+}
+
+
+/* Add responsive styles if needed */
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0;
   }
-  
+  .contactInfo {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .imageContainer {
+    width: 100%;
+  }
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -16,3 +16,9 @@
   text-align: center;
   color: #333; /* Adjust text color as needed */
 }
+
+@media (max-width: 768px) {
+  .content {
+    margin: 20vh 0;
+  }
+}
