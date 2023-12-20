@@ -19,7 +19,7 @@ const InteractiveGallery: React.FC = () => {
           <div className={styles.imageContainer}>
             {images.map((image, index) => (
               <div key={index} className={styles.imageWrapper}>
-                <Image width={300} height={400} src={image} alt={`Design Gallery Image ${index + 1}`} />
+                <Image style={{objectFit: 'cover'}} width={300} height={400} src={image} alt={`Design Gallery Image ${index + 1}`} />
               </div>
             ))}
           </div>
