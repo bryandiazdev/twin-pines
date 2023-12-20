@@ -11,7 +11,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ service, description 
   return (
     <div className={styles.servicesSection}>
       <h2>{service}</h2>
-      <p style={{textAlign: 'center'}}>{description}</p>
+      <p style={{textAlign: 'left'}}>{description}</p>
     </div>
   );
 };

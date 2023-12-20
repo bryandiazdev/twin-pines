@@ -65,4 +65,13 @@
   color: #fff; /* Change the text color */
 }
 
+.galleryContent {
+  width: 50%;
+}
+
+@media (max-width: 600px) {
+  .galleryContent {
+    width: 100%
+  }
+}
 /* Add other styles as needed */

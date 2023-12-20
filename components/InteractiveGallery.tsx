@@ -5,10 +5,7 @@ import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
 
 const images = [
-  '/services1.jpg', // Replace with your image paths
-  '/services2.JPG',
-  '/services3.jpg',
-  '/services4.JPG',
+  '/services1.jpg', 
 ];
 
 const InteractiveGallery: React.FC = () => {
