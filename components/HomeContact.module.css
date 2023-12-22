@@ -1,6 +1,6 @@
 /* Add this to your CSS styles */
 .contact-section {
-  background: url('/services9.JPG') center/cover;
+  background: rgba(255, 255, 255, 0.8);
   height: 100vh;
   display: flex;
   align-items: center;

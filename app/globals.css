@@ -284,7 +284,7 @@ button:hover {
 
 /* Add this to your CSS styles */
 .contact-section {
-  background: url('/services1.jpg') center/cover;
+  background: var(--primary-bg-color);
   height: 100vh;
   display: flex;
   align-items: center;

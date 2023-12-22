@@ -22,7 +22,7 @@
 }
 
 .contactInfo {
-  width: 40vw;
+  width: 30vw;
   text-align: center;
 }
 
@@ -48,7 +48,7 @@
 .imageContainer {
   position: relative;
   display: inline-block;
-  width: 55vw;
+  width: 70vw;
   height: 40vh;
 }
 
@@ -56,6 +56,7 @@
   display: block;
   width: 100%; /* Adjust as needed */
   height: 40vh; /* Adjust as needed */
+  object-fit: cover;
 }
 
 .imageContainer::before {

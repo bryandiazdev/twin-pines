@@ -1,7 +1,7 @@
 /* components/Hero.module.css */
 .hero {
   position: relative;
-  height: 100vh; /* Set the height as needed */
+  height: 50vh; /* Set the height as needed */
   background-image: url('/services7.JPG'); /* Replace with your actual image path */
   background-size: cover;
   background-position: center;
@@ -19,7 +19,7 @@
 
 .content {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;

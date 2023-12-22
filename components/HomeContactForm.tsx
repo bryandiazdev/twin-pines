@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 const ContactSection: React.FC = () => {
   return (
     <section className="contact-section">
-      <div className="contact-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -26,10 +25,9 @@ const ContactSection: React.FC = () => {
               Message:
               <textarea rows={5}></textarea>
             </label>
-            <button type="submit">Submit</button>
+            <button type="submit">Contact</button>
           </form>
         </motion.div>
-      </div>
     </section>
   );
 };

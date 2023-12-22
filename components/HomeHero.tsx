@@ -19,6 +19,7 @@ const Hero: React.FC = () => {
 
 
   return (
+    <>
     <div className={styles.hero}>
       <div className={styles.overlay}></div>
       <div className={styles.content}>
@@ -32,6 +33,11 @@ const Hero: React.FC = () => {
         
       </div>
     </div>
+    <div style={{height: '50vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-evenly', padding: '4rem', background: 'white'}}>
+      <p>Twin Pines Landscaping is a landscape design, installation, and maintenance company specializing in large scale residential outdoor living projects. Designing and transforming your dream outdoor living space requires careful planning, collaboration, and expertise. Our streamlined step-by-step process ensures a smooth experience for our clients. Whether you have an existing concept or would like our professional recommendation, you can count on us to bring your design ideas to life.</p>
+      <button onClick={routeToContact}>Contact Us</button>
+    </div>
+    </>
   );
 };
 

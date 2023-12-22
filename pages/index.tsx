@@ -47,7 +47,7 @@ const Home: React.FC = () => {
         <div id='scroll-target'/>
         <div style={{marginTop: '120px', marginBottom: '40px'}}>
           <ServicesSection
-            service="Services"
+            service="Our process"
             description="Transform your outdoor space into a masterpiece with our expert landscaping services."
             services={landscapingServices}
           />

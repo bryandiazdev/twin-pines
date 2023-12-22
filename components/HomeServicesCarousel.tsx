@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { motion, useAnimation } from 'framer-motion';
 import styles from './HomeServicesCarousel.module.css';
+import { Typography } from '@mui/material';
 
 interface ServiceCard {
   title: string;
@@ -47,7 +48,9 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ service, description,
       initial={{ opacity: 0, y: 20 }}
       animate={controls}
     >
-      <h2>{service}</h2>
+      <Typography sx={{fontFamily: 'PT serif'}} variant="h2" align="center" gutterBottom>
+        {service}
+      </Typography>
       <p>{description}</p>
       <motion.div className={styles.cardContainer}>
         {services.map((serviceCard, index) => (
