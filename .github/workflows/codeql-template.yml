@@ -1,0 +1,63 @@
+name: "Comprehensive Language Detection and Analysis Workflow"
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * 0'  # Scheduled to run every Sunday at midnight
+
+jobs:
+  analyze-javascript:
+    name: Analyze JavaScript Code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Set up CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: javascript
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+
+  analyze-python:
+    name: Analyze Python Code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Set up CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: python
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+
+  analyze-java:
+    name: Analyze Java Code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Set up CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: java
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+
+  analyze-ruby:
+    name: Analyze Ruby Code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Set up CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: ruby
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
